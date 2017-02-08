@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.children && e.children.length) lines.push(e.innerText + '\n');
         else if (e.innerText == '_') lines.push('<br>\n');
         else lines.push(e.innerText + '\n\n');
-        container.removeChild(e);
+        e.remove();
     });
     lines = lines.join('');
 
